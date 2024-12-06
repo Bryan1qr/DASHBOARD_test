@@ -4,13 +4,13 @@ library(bslib)
 
 # Definir los puntos de monitoreo
 puntos <- data.frame(
-  id = c("Punto 1", "Punto 2", "Punto 3"),
-  lat = c(19.4326, 20.6592, 18.7357),  # Latitudes de ejemplo (ajústalas)
-  lon = c(-99.1332, -103.3496, -70.1591),  # Longitudes de ejemplo (ajústalas)
-  descripcion = c("Monitoreo de calidad del aire", 
-                  "Monitoreo de temperatura", 
-                  "Monitoreo de humedad")
-)
+  id = paste0("EMCA-", sprintf("%02d", 1:6)),
+  lat = c(-18.004275, -17.993250, -17.980364, -18.00676, -18.03961, -18.02685),
+  lon = c(-70.257304, -70.243305, -70.239032, -70.23816, -70.25581, -70.2507),  # Longitudes de ejemplo (ajústalas)
+  descripcion = c("Hipólito Unanue", 
+                  "Instituto Vigil", 
+                  "I.E. Manuel Odría",
+                  "E.P. UNJBG", "Jorge Chávez", "UNJBG"))
 
 # Interfaz de usuario
 ui <- fluidPage(
